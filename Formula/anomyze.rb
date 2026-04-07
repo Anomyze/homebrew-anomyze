@@ -42,7 +42,7 @@ class Anomyze < Formula
 
   resource "manpage" do
     url "https://download.anomyze.network/releases/daemon/latest/anomyzed.1"
-    sha256 :no_check
+    sha256 "fc0455b6cd4eab457c4f046576144db3407a945afe2308941504f77fb005658e"
   end
 
   def install
