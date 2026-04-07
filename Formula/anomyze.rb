@@ -40,21 +40,46 @@ class Anomyze < Formula
     end
   end
 
+  resource "manpage" do
+    url "https://download.anomyze.network/releases/daemon/latest/anomyzed.1"
+    sha256 :no_check
+  end
+
   def install
     bin.install Dir["anomyzed*"].first => "anomyzed"
+    resource("manpage").stage do
+      man1.install "anomyzed.1"
+    end
   end
 
   def caveats
     <<~EOS
-      To complete setup, register the NMH manifest for your Chrome extension:
 
-        anomyzed --install-nmh --extension-id=YOUR_32_CHAR_ID
+      ══════════════════════════════════════════════════
+       ✦  Anomyze daemon installed successfully  ✦
+      ══════════════════════════════════════════════════
 
-      Your Extension ID is visible at chrome://extensions with Developer Mode on.
-      Then fully quit and relaunch Chrome.
+       Next steps:
 
-      To uninstall the NMH manifest before removing this formula:
-        anomyzed --uninstall-nmh
+       1. Register with your Chrome extension:
+          anomyzed --install-nmh --extension-id=YOUR_ID
+
+          (Find your ID at chrome://extensions with Developer Mode on)
+
+       2. Quit and relaunch Chrome (Cmd+Q, not just close the window)
+
+       3. Open any webpage → click the Anomyze extension icon
+          The sidepanel should show "Daemon connected"
+
+       Useful commands:
+          anomyzed --version        Show version
+          anomyzed --uninstall-nmh  Remove Chrome integration
+          man anomyzed              Full documentation
+
+       Docs:  https://anomyze.com
+       Help:  https://github.com/Anomyze/anomyze-core/issues
+      ══════════════════════════════════════════════════
+
     EOS
   end
 
