@@ -15,12 +15,12 @@ class Anomyze < Formula
   on_macos do
     on_arm do
       url "https://download.anomyze.network/releases/daemon/latest/anomyzed-darwin-arm64"
-      sha256 "af46a46881273d47ee4f8718e5eec911399cf087be44cf05edb72cbe3a1ac68e"
+      sha256 "fe8bf2002e607caed3bbd8a3efe1147e1c8075a98f7ebae52ba7d8745ec3e195"
     end
 
     on_intel do
       url "https://download.anomyze.network/releases/daemon/latest/anomyzed-darwin-amd64"
-      sha256 "dbed7faa0aa397b4eb4f1e161094eca9bddf2a6910ce9f3399c177582bf9aeb3"
+      sha256 "b87733e014c7f8ee21415d9e1ce6a56f9610c4baeecee6ddcc9e85168ac15f7b"
     end
   end
 
