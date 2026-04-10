@@ -9,18 +9,18 @@
 class Anomyze < Formula
   desc "Anomyze P2P daemon — encrypted mesh network for Chrome"
   homepage "https://anomyze.com"
-  version "0.5.0-m53-peer-connected"
+  version "0.5.1-fanout-fix"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://download.anomyze.network/releases/daemon/latest/anomyzed-darwin-arm64"
-      sha256 "86f7b0805ab55d725fe4b8a76578cdbccba1216251e3b664cd7ba29b328c7d5e"
+      sha256 "9bfe78b90aee6badf9fae44e1209f351db0009cb5f1690581f7a704a5f747f3c"
     end
 
     on_intel do
       url "https://download.anomyze.network/releases/daemon/latest/anomyzed-darwin-amd64"
-      sha256 "166370fad6b37e0ecde2d6d475c6cdd3e6dd6d47f6a76f88ddacb05516736021"
+      sha256 "180ce74bd87b0c882aaa7471daab15c99360f45eb1806e906026931f1f9b52c5"
     end
   end
 
