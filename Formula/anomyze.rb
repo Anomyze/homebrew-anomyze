@@ -9,7 +9,7 @@
 class Anomyze < Formula
   desc "Anomyze P2P daemon — encrypted mesh network for Chrome"
   homepage "https://anomyze.com"
-  version "v0.1.0-libp2p-323-ge4eb426e-dirty"
+  version "v0.1.0-libp2p-325-ga720b07a-dirty"
   license "Proprietary"
 
   on_macos do
