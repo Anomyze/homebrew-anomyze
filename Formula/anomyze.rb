@@ -22,30 +22,30 @@
 class Anomyze < Formula
   desc "Anomyze P2P daemon — encrypted mesh network for Chrome"
   homepage "https://anomyze.com"
-  version "0.9.1"
+  version "0.9.2"
   license "Proprietary"
 
   on_macos do
     on_arm do
-      url "https://download.anomyze.network/releases/daemon/v0.9.1/anomyze-darwin-arm64"
-      sha256 "0a6d25bba4945f38bbfed06b880fccaf499e88d4d5ae64a19fcf576bc522b919"
+      url "https://download.anomyze.network/releases/daemon/v0.9.2/anomyze-darwin-arm64"
+      sha256 "57785baf01b44de47bf94ecdff79e4a5e21f6dcfdede777c896cd4d8904fed89"
     end
 
     on_intel do
-      url "https://download.anomyze.network/releases/daemon/v0.9.1/anomyze-darwin-amd64"
-      sha256 "c199644aa0b2eb8deed290f5dcd7070b98c5c805c3e76b1955e8ad48df7599a1"
+      url "https://download.anomyze.network/releases/daemon/v0.9.2/anomyze-darwin-amd64"
+      sha256 "9eeff92f1c7b8e6228ca8787f36cdf349bcbeb0430d71285511cac5f64e069ce"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://download.anomyze.network/releases/daemon/v0.9.1/anomyze-linux-arm64"
-      sha256 "4549fb1b86cdf711555d66ecbc063c004f7606ada4c71785d5da02f606e614e0"
+      url "https://download.anomyze.network/releases/daemon/v0.9.2/anomyze-linux-arm64"
+      sha256 "e7a0e8684caf2b524b7f22e9afd36e2d6b42abc29ce02836d5391ebddd86f16c"
     end
 
     on_intel do
-      url "https://download.anomyze.network/releases/daemon/v0.9.1/anomyze-linux-amd64"
-      sha256 "e1b702465c5f1695c3bae0d71305586fabdce927a99b08b6733f5efe1c327143"
+      url "https://download.anomyze.network/releases/daemon/v0.9.2/anomyze-linux-amd64"
+      sha256 "41b6789da4b7cc18a3867c22e460a76bf4d1752cecde20d230aa560c6f67f849"
     end
   end
 
